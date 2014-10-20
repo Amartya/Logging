@@ -1,0 +1,45 @@
+[Tue Oct 07 21:45:53 2014] [error] [client 129.105.107.223] Target WSGI script not found or unable to stat: /home/ec2-user/reese/apache/django.wsgi
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223] mod_wsgi (pid=7939): Target WSGI script '/home/ec2-user/reese/apache/django.wsgi' cannot be loaded as Python module.
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223] mod_wsgi (pid=7939): Exception occurred processing WSGI script '/home/ec2-user/reese/apache/django.wsgi'.
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223] Traceback (most recent call last):
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/home/ec2-user/reese/apache/django.wsgi", line 10, in <module>
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     import django.core.handlers.wsgi
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     from django.core.handlers import base
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 12, in <module>
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     from django.db import connections, transaction
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/db/__init__.py", line 83, in <module>
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     signals.request_started.connect(reset_queries)
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     if settings.DEBUG:
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     self._setup(name)
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     self._wrapped = Settings(settings_module)
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 132, in __init__
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223]     % (self.SETTINGS_MODULE, e)
+[Tue Oct 07 21:58:57 2014] [error] [client 129.105.107.223] ImportError: Could not import settings 'reese.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named reese.settings
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223] mod_wsgi (pid=7968): Target WSGI script '/home/ec2-user/reese/apache/django.wsgi' cannot be loaded as Python module.
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223] mod_wsgi (pid=7968): Exception occurred processing WSGI script '/home/ec2-user/reese/apache/django.wsgi'.
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223] Traceback (most recent call last):
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/home/ec2-user/reese/apache/django.wsgi", line 10, in <module>
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     import django.core.handlers.wsgi
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/core/handlers/wsgi.py", line 11, in <module>
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     from django.core.handlers import base
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 12, in <module>
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     from django.db import connections, transaction
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/db/__init__.py", line 83, in <module>
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     signals.request_started.connect(reset_queries)
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/dispatch/dispatcher.py", line 88, in connect
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     if settings.DEBUG:
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     self._setup(name)
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     self._wrapped = Settings(settings_module)
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]   File "/usr/lib64/python2.7/site-packages/django/conf/__init__.py", line 132, in __init__
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223]     % (self.SETTINGS_MODULE, e)
+[Tue Oct 07 21:59:14 2014] [error] [client 129.105.107.223] ImportError: Could not import settings 'reese.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named reese.settings
+[Wed Oct 08 01:46:37 2014] [error] [client 64.141.19.209] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Oct 08 05:53:37 2014] [error] [client 61.7.128.97] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Oct 08 11:32:55 2014] [error] [client 216.137.114.153] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Oct 08 20:21:16 2014] [error] [client 213.148.220.99] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
