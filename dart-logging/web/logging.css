@@ -1,0 +1,83 @@
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+h1, p {
+  font-size: 18px;
+  color: #333;
+  margin-left:50px;
+}
+
+#app-id, #app-data {
+  width: 200px;
+  height: 25px;
+  border-style:solid;
+  border-radius: 5px;
+  border-width:1px;
+  border-color:#3F4E69;
+  background-color: #fff;
+  padding:5px 8px;
+  position:relative;
+}
+
+#app-id:focus, #app-data:focus{
+  outline:none;
+}
+
+label{
+    display:inline-block;
+    float:left;
+    padding-right:15px;
+}
+
+ul{
+  list-style-type:none;
+  list-style-position:outside;
+}
+
+li{
+  padding:12px;
+  position:relative;
+}
+
+#submit{
+  width: 80px;
+  height: 25px;
+  border-style:solid;
+  border-radius: 5px;
+  border-width:1px;
+  border-color:#1B44BF;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px 5px;
+  background-color: #FFF;
+  -webkit-user-select: none;
+  user-select: none;
+  transform-style: preserve-3d;
+  margin-left:50px;
+}
+
+#submit:hover{
+  background-color: #E0E0E0;
+}
+
+#submit:active{
+  background-color: #C7C7C7;
+}
+
+#submit-btn{
+  font-size: 12pt;
+  color:#1B44BF;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
